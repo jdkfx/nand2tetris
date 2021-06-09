@@ -15,4 +15,9 @@ CHIP Bit {
 
     PARTS:
     // Put your code here:
+    // If load(t-1) then out(t) = in(t-1)
+    // else out(t) = out(t-1)
+    Mux(a = dffout, b = in, sel = load, out = muxout);
+    DFF(in = muxout, out = dffout, out = out);
+    
 }
