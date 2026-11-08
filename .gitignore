@@ -1,3 +1,4 @@
 *.code-workspace
 *.dat
 .idea/
+.DS_Store
